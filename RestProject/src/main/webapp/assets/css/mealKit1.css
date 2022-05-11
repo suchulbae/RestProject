@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+* { margin: 0; 
+	padding: 0; 
+    box-sizing: border-box; 
+}
+body { font-family: "돋움"}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+   	color: #ffffff;
+}
+li { list-style-type: none; }
+
+/* 기본 CSS, 스마트 폰 CSS */
+header {
+    position: relative;
+    height: 60px;
+    background-color: black;
+}
+header .logo {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+   
+}
+header .logo span {
+    color: #1f5abb;
+    font-weight: bold;
+} 
+header .menu {
+   
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.main_image img { max-width: 100%; } 
+.banner { padding: 15px; }
+.banner li { float: left; padding: 10px; }
+.banner img { max-width: 100%;}
+.banner p { margin-top: 10px; line-height: 150%; }
+.banners::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.items {
+    padding: 15px;
+    padding-bottom: 40px;
+    background-color: gray; 
+}
+.items img {
+    max-width: 100%;
+    display: block;
+}
+.items ul {
+    background-color: white;
+    margin-bottom: 20px;
+}
+.items li:nth-child(2) { padding: 15px 10px; }
+.items li:last-child { padding: 0px 10px 10px 10px; }
+.items::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+footer {
+    color: white;
+    background-color: black;
+    padding-bottom: 20px;
+}
+footer .box div { padding: 60px 0 0 20px; }
+footer .box div:first-child h1 { margin-top: 20px; }
+footer .box div:nth-child(2) li {
+    display: inline-block;
+    margin-right: 5px;
+}
+footer .box div:nth-child(2) p { 
+    margin-top: 20px; 
+    line-height: 150%;
+}  
+footer .box div:last-child {
+    text-align: right;
+    padding-right: 20px;
+}
+footer::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col_"] 
+	{  float: left; }
+    .col_s_1 { width: 15%; }
+	.col_s_2 { width: 25%; } 
+	.col_s_3 { width: 50%; }
+    .col_s_4 { width: 50%; }
+    .col_s_5 { width: 75%; } 
+	
+	header .menu_btn { 
+		display: none; 
+		 width:20px;
+    	position: absolute;
+    	top: 20px;
+    	right: 20px;
+	} 
+	
+    header .menu { display: block; } 
+    header .menu li {
+        display: inline-block;
+        margin: 5px 0 0 0px;
+    }
+
+@media only screen and (min-width: 768px) {
+    /* 테블릿 CSS */
+    .col_m_1 { width: 15%; }
+	.col_m_2 { width: 25%; } 
+	.col_m_3 { width: 50%; }		
+    .col_m_4 { width: 50%; }
+    .col_m_5 { width: 75%; }     
+    
+	header .menu_btn { display: none; } 
+    header .menu { display: block; } 
+    header .menu li {
+        display: inline-block;
+        margin: 5px 0 0 50px;
+    }
+	
+    .box { 
+        max-width: 1170px; 
+        margin: 0 auto; 
+        position: relative;
+    }
+    .banners { margin: 50px 0; } 
+    .items { padding-top: 60px; }
+    .item { padding-right: 15px; }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* 데스크톱 CSS */
+	.col_1 { width: 15%; }
+    .col_2 { width: 25%; }
+	.col_3 { width: 50%; }	
+    .col_4 { width: 50%; }
+    .col_5 { width: 75%; }    
+   
+    header .menu_btn { display: none; } 
+    header .menu { display: block; } 
+    header .menu li {
+        display: inline-block;
+        margin: 5px 0 0 50px;
+    }
+    .box {
+        max-width: 1170px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .banner { padding-right: 30px; }
+    .items { padding-top: 60px; }
+    .item { padding-right: 15px; }
+}
+
+div .welcome{
+	height: 50px;
+	font-weight: bold;
+	background-color: red;
+}
+
